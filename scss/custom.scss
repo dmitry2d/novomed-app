@@ -1,0 +1,55 @@
+
+// Кастомизированные глобальные переменные Botstrap
+@import "./_global_variables";
+
+// Необходимые модули для кастомизации Bootstrap
+@import  "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// Кастомизированные переменные Botstrap
+@import "./_variables";
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// Дополнительные свойства
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+$utilities: map-merge(
+  $utilities, (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+
+// Основные модули Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Font Awesome
+$fa-font-path: "../webfonts";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// Google fonts
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Стили модулей проекта
+@import "./common";
+@import "./page-header";
+@import './page-footer';
+
