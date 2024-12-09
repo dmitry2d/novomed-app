@@ -1,0 +1,25 @@
+
+.page-grid {
+
+    display: flex;
+    min-height: 100%;
+    
+    .__left {
+        
+        width: 350px;
+        overflow: hidden;
+        position: relative;
+
+        @include media-breakpoint-down(lg) { 
+            width: 0;
+            margin: 0;
+            padding: 0;
+        }
+        
+    }
+    .__right {
+
+        flex-grow: 1;
+
+    }
+}

@@ -1,66 +1,42 @@
+
 <?php
-
     include "./components/header.php";
-
-    include "./components/page-header.php";
-
 ?>
 
-    <script>
-        const app_version = 4;
-    </script>
+<div class="page-grid">
+    <div class="__left">
+        <?php
+            include "./components/main-menu.php";
+        ?>
+    </div>
+    <div class="__right">
 
-    <style>
-        body {
-            height: 100%;
-        }
-        html {
-            height: 100%;
-        }
-        .fullcenter {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+        <?php
+            include "./components/page-header.php";
+        ?>
 
-        <div class="fullcenter">
-            Приложение Новомед&nbsp;<span class="version"></span>
+        <div class="p-5">
+            <div class="row row-cols-1 row-cols-xl-2 g-5">
+                <div class="col">
+                    <?php
+                        include "./components/widget-welcome.php";
+                    ?>
+                    <div class="my-5"></div>
+                    <?php
+                        include "./components/widget-book.php";
+                    ?>
+                </div>
+                <div class="col">
+                </div>
+            </div>
         </div>
 
-        <script>
-            function wrongVersion () {
-                window.location.reload();
-            };
-            function checkVersion () {
-                $.ajax({
-                    type:"GET", 
-                    url: "http://volcharo.ru/novomed-app/version.php", 
-                    success: function(data) {
-                        const actual_version = data.version;
-                        if (app_version != actual_version) {
-                            $(".version").html('устаревшая версия, обновляю');
-                            setTimeout (wrongVersion, 5000);
-                        } else {
-                            $(".version").html(JSON.stringify('v. ' +  data.version));
-                            setTimeout (checkVersion, 5000);
-                        }
-                    }, 
-                    error: function(jqXHR, textStatus, errorThrown) {
-                        $(".version").html('Ошиьбка проверки версии. Напишите нам.');
-                        setTimeout (checkVersion, 5000);
-                    },
-                    dataType: "json"
-                });
-            }
-            checkVersion();
-        </script>
+    </div>
+</div>
 
 <?php
-    
     include "./components/page-footer.php";
-
+?>
+<?php
     include "./components/footer.php";
-
 ?>

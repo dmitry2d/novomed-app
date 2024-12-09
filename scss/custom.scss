@@ -39,6 +39,10 @@ $utilities: map-merge(
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
+// Fonts
+@import "../fonts/fonts.css";
+
+
 // Font Awesome
 $fa-font-path: "../webfonts";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
@@ -52,4 +56,7 @@ $fa-font-path: "../webfonts";
 @import "./common";
 @import "./page-header";
 @import './page-footer';
+@import './widget-book';
+@import './page-grid';
+@import './main-menu';
 

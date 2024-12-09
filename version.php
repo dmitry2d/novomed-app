@@ -1,6 +1,6 @@
 <?php
 $jsonData = array(
-    'version' => 4,
+    'version' => '1.0.4',
 );
 header('Content-Type: application/json');
 echo json_encode($jsonData);

@@ -1,0 +1,27 @@
+
+html {
+    font-size: 14px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+svg {
+    &.inherit {
+        fill: inherit;
+        * {
+            fill: inherit;
+        }
+    }
+}
+
+
+
+// font weights
+@each $w in (300,400,500,700){
+    .fw-#{$w} {
+      font-weight: #{$w};
+    }
+}
