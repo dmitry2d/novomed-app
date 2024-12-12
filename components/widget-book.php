@@ -1,6 +1,6 @@
 <section class="widget-book">
 
-    <div class="__wrapper p-4">
+    <div class="__wrapper p-4 widget-rounded widget-shadow">
 
         <div class="__header">
             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
 
         </div>
 
-        <div class="row row-cols-3 align-items-stretch g-4">
+        <div class="row row-cols-2 row-cols-lg-3 align-items-stretch g-4">
             <div class="col">
                 <div class="bg-nmui-grey-darky rounded-3 p-3">
                     <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md">
                 <div class="bg-nmui-grey-darky rounded-3 p-3 h-100 d-flex justify-content-center align-items-center" style="fill:white">
                     <div class="position-relative">
                         <svg class="inherit" width="34" height="24" viewBox="0 1 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

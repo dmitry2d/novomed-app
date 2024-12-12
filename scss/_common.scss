@@ -17,11 +17,18 @@ svg {
     }
 }
 
-
-
-// font weights
-@each $w in (300,400,500,700){
-    .fw-#{$w} {
-      font-weight: #{$w};
-    }
+.widget-rounded {
+    border-radius: 24px;
 }
+
+.widget-shadow {
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(58, 64, 94, .2);
+    box-shadow: 0px 10px 10px 0px rgba(58, 64, 94, .2);
+}
+
+.widget-shadow-light {
+    -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.05);
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,.05);
+}
+
+

@@ -10,13 +10,34 @@ $container-max-widths: (
 );
 
 $custom-colors: (
+  "nmui-body-bg": $body_bg,
   "nmui-grey-dark": $nmui-color-grey-dark,
   "nmui-grey-darky": $nmui-color-grey-darky,
   "nmui-dot": $nmui-color-blue,
+  "nmui-blue": $nmui-color-blue,
   "nmui-green": $nmui-color-green,
-  // "theme-black": $body-color
+  "nmui-margenta": $nmui-color-margenta,
+  "nmui-indigo": $nmui-color-indigo
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// градиенты
+$nmui-gradients: (
+    'margenta-indigo': linear-gradient(90deg, $nmui-color-margenta 0%, $nmui-color-indigo 100%)
+);
+@each $key, $value in $nmui-gradients {
+  .bg-gradient-#{$key} {
+    background-image: #{$value}
+  }
+} 
+
+// font weights
+@each $w in (300,400,500,700){
+  .fw-#{$w} {
+    font-weight: #{$w};
+  }
+}
+
 
 // Основной шрифт
 $font-family-sans-serif: "PT Root UI", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

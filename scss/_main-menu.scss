@@ -20,4 +20,59 @@
         top: 0;
     }
 
+    .__items {
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            height: 30px;
+
+            padding: 21px 12px;
+            border-radius: 10px;
+            &:hover {
+                .__link-title {
+                    color: white;
+                }
+            }
+            
+            &.active {
+                color: white;
+                background: #00000030;
+            }
+
+        }
+        .__icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .__link-title {
+            font-size: 18px;
+            color: $nmui_color_grey_bluey;
+            padding-left: 10px;
+            transition: 0.3s;
+            flex-grow: 1;
+        }
+
+        .__link-count {
+            background: $nmui-color-green;
+            border-radius: 20px;
+            color: black;
+            font-weight: 700;
+            font-size: 10px;
+            display: flex;
+            min-width: 20px;
+            height: 20px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5px;
+        }
+
+        
+    }
+
+
+
 }
