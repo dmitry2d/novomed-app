@@ -13,7 +13,7 @@ $(document).ready (() => {
     $(document).on('escKey', () => {
         $('.main-menu').removeClass('open');
     });
-    $('.main-menu').on('click', (e) => {
+    $('#closemenu').on('click', (e) => {
         e.preventDefault();
         e.stopPropagation();
         $('.main-menu').removeClass('open');
