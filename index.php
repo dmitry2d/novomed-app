@@ -29,10 +29,18 @@
                     <?php
                         include "./components/widget-book-banner.php";
                     ?>
+                    <div class="my-4 my-lg-5"></div>
+                    <?php
+                        include "./components/widget-analis.php";
+                    ?>
                 </div>
                 <div class="col">
                     <?php
-                        include "./components/widget-analis.php";
+                        include "./components/widget-payment.php";
+                    ?>
+                    <div class="my-4 my-lg-5"></div>
+                    <?php
+                        include "./components/widget-events.php";
                     ?>
                 </div>
             </div>
