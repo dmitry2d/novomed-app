@@ -29,6 +29,28 @@ svg {
 .widget-shadow-light {
     -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,.05);
     box-shadow: 0px 4px 20px 0px rgba(0,0,0,.05);
+    transition: box-shadow 0.2s;
+    &:hover {
+        -webkit-box-shadow: 0px 6px 30px 0px rgba(0,0,0,.07);
+        box-shadow: 0px 6px 30px 0px rgba(0,0,0,.07);
+    }
 }
 
+
+form {
+
+    input.clear {
+        outline: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+.fw-300 {font-weight: 300}
+.fw-400 {font-weight: 400}
+.fw-500 {font-weight: 500}
+.fw-700 {font-weight: 700}
 

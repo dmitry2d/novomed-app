@@ -32,6 +32,8 @@ nmui_version.set = function (value)
     $(nmui_version.container).html(value);
 };
 
+
+
 nmui_version.check = function ()
 {
     console.log ('check version');    

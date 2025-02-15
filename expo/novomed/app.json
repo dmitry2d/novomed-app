@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "entryPoint": "./index.js",
+    "name": "novomed",
+    "android": {
+      "package": "com.dmitry2d.novomed",
+      "splash": {
+        "image": "./assets/images/splash_icon.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#004192",
+        "dark": {
+          "image": "./assets/images/splash_icon.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#004192"
+        }
+      }
+    },
+    "ios": {
+      "splash": {
+        "image": "./assets/images/splash_icon.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#004192",
+        "dark": {
+          "image": "./assets/images/splash_icon.png",
+          "resizeMode": "cover",
+          "backgroundColor": "004192"
+        }
+      }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#004192",
+          "image": "./assets/images/splash_icon.png"
+        }
+      ]
+    ],
+    "androidStatusBar": {
+      "translucent": true,
+      "barStyle": "dark-content",
+      "backgroundColor": "#004192"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8b9ded6f-1f38-4c5f-891f-d5703934bc8d"
+      }
+    }
+  }
+}

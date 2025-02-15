@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 export default function App() {
   return (
     <>
-      <WebView source={{ uri: "https://volcharo1.fvds.ru/novomed-app/" }} />
+      <WebView source={{ uri: "https://novomed-novoross.ru/m/" }} />
       <StatusBar style="auto" backgroundColor="transparent" translucent />
     </>
   );
