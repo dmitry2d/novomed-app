@@ -1,0 +1,63 @@
+
+
+.nmui-dropdown {
+
+    position: relative;
+    width: 100%;
+
+    .nmui-dropdown-main {
+        
+        display: flex;
+        align-items: center;
+
+        cursor: pointer;
+
+        svg {
+            display: block;
+        }
+        
+        .nmui-dropdown-main-text {
+            flex-grow: 1;
+        }
+
+        border: 1px solid $nmui_color_grey_light;
+        
+    }
+    .nmui-dropdown-list {
+
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        opacity: 0;
+        pointer-events: none;
+
+        transition: 0.2s;
+        overflow: hidden;
+        
+        .nmui-dropdown-list-item {
+            padding: 10px 20px;
+            transition: 0.3s;
+            &:hover {
+                background-color: $body_bg;
+            }
+            &.current {
+                background-color: $nmui-color-blue-light;
+            }
+            cursor: pointer;
+        }
+    }
+    
+    &.open {
+
+        .nmui-dropdown-list {
+    
+            opacity: 1;
+            pointer-events: all;
+            z-index: 1000;
+    
+        }
+
+    }
+
+}

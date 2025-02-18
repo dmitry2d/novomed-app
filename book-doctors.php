@@ -37,14 +37,31 @@
     <div class="my-5"></div>
 
     <div class="px-4 px-lg-5 my-4">
-        <?php
-            include "./components/widget-book-doctor.php";
-        ?>
+        <div class="my-3">
+            <?php
+                include "./components/widget-book-doctor.php";
+            ?>
+        </div>
+        <div class="my-3">
+            <?php
+                include "./components/widget-book-doctor.php";
+            ?>
+        </div>
+        <div class="my-3">
+            <?php
+                include "./components/widget-book-doctor.php";
+            ?>
+        </div>
     </div>
 
+    <div class="py-5 my-5"></div>
 
 </div>
 
+
+<?php
+    include "./components/widget-book-doctor-popup.php";
+?>
 <?php
     include "./components/page-footer.php";
 ?>

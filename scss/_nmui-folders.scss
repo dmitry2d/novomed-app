@@ -1,0 +1,28 @@
+.nmui-folders {
+    .nmui-folders-selectors {
+        display: flex;
+        gap: 10px;
+    }
+    .nmui-folders-selector {
+        padding: 10px 15px;
+        
+        cursor: pointer;
+        
+        &.current {
+            color: $nmui-color-blue;
+            background-color: $nmui-color-blue-light;
+        }
+    }
+    .nmui-folders-contents {
+        display: flex;
+        flex-direction: column;
+        .nmui-folders-content {
+            overflow: hidden;
+            height: 0;
+            &.current {
+                height: auto;
+            }
+        }
+    }
+
+}
