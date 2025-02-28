@@ -2,6 +2,7 @@
     .nmui-folders-selectors {
         display: flex;
         gap: 10px;
+        flex-wrap: wrap;
     }
     .nmui-folders-selector {
         padding: 10px 15px;

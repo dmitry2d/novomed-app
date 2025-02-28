@@ -42,16 +42,6 @@
                 include "./components/widget-book-doctor.php";
             ?>
         </div>
-        <div class="my-3">
-            <?php
-                include "./components/widget-book-doctor.php";
-            ?>
-        </div>
-        <div class="my-3">
-            <?php
-                include "./components/widget-book-doctor.php";
-            ?>
-        </div>
     </div>
 
     <div class="py-5 my-5"></div>

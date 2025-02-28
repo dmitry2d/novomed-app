@@ -60,7 +60,9 @@
 
     }
     .widget-book-doctor-right {
-        min-width: 400px;
+        @include media-breakpoint-up(xl) { 
+            min-width: 400px;
+        }
     }
     .widget-book-doctor-times {
         

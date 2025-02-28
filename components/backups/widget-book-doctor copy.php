@@ -4,7 +4,7 @@
 
     <div class="widget-book-doctor-grid p-4 widget-shadow-light background-white rounded-5 bg-white">
         
-        <div class="widget-book-doctor-left pe-xxl-4">
+        <div class="widget-book-doctor-left pe-4">
 
             <div class="d-flex">
 
@@ -68,42 +68,22 @@
             </div>
 
 
-            <div class="nmui-dropdown widget-book-doctor-consult-types fs-5 w-100">
-                <div class="nmui-dropdown-main border border-nmui-grey-light rounded-3 px-4 py-3 w-100">
-                    <div class="nmui-dropdown-main-text">
-                        <div class="" widget-book-doctor-data="filial">
-                            Первичная консультация
-                        </div>
-                        <div class="text-mnui-grey-medium" widget-book-doctor-data="address">
-                            1 500 ₽
-                        </div>
+            <div class="widget-book-doctor-consult-types">
+                <div class="widget-book-doctor-consult-type rounded-4 p-4 selected">
+                    <div class="text-nmui-grey-medium" widget-book-doctor-data="type">
+                        Первичная консультация
                     </div>
-                    <div class="nmui-dropdown-main-icon">
-                        <div class="bg-nmui-white p-2 rounded-5">
-                            <svg width="10" height="10" viewBox="0 -2 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L5 5L9 1" stroke="#102030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
+                    <div class="fs-5 pt-2">
+                        1 500 ₽
                     </div>
                 </div>
-                <div class="nmui-dropdown-list bg-white widhet-shadow-light rounded-4">
-                    <div class="nmui-dropdown-list-item current">
-                        <div class="" widget-book-doctor-data="filial">
-                            Повторная консультация
-                        </div>
-                        <div class="text-mnui-grey-medium" widget-book-doctor-data="address">
-                            1 500 ₽
-                        </div>
+                <div class="widget-book-doctor-consult-type rounded-4 p-4">
+                    <div class="text-nmui-grey-medium" widget-book-doctor-data="type">
+                        Повторная консультация
                     </div>
-                    <div class="nmui-dropdown-list-item">
-                        <div class="" widget-book-doctor-data="filial">
-                            Повторная консультация Повторная консультация Повторная консультация Повторная консультация Повторная консультация
-                        </div>
-                        <div class="text-mnui-grey-medium" widget-book-doctor-data="address">
-                            1 000 500 ₽
-                        </div>
+                    <div class="fs-5 pt-2">
+                        1 000 ₽
                     </div>
-                    
                 </div>
             </div>
 
@@ -174,7 +154,7 @@
 
                 <div class="nmui-folders-contents text-nmui-grey-medium fs-6">
                     <div class="nmui-folders-content current">
-                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-4 row-cols-lg-4 g-3 py-2">
+                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 py-2">
                             <div class="col">
                                 <div class="widget-book-doctor-time rounded-3">
                                     11:30
@@ -198,7 +178,7 @@
                         </div>
                     </div>
                     <div class="nmui-folders-content">
-                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-4 row-cols-lg-4 g-3 py-2">
+                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 py-2">
                             <div class="col">
                                 <div class="widget-book-doctor-time rounded-3">
                                     11:30
@@ -232,7 +212,7 @@
                         </div>
                     </div>
                     <div class="nmui-folders-content">
-                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-4 row-cols-lg-4 g-3 py-2">
+                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 py-2">
                             <div class="col">
                                 <div class="widget-book-doctor-time rounded-3">
                                     11:30
@@ -246,7 +226,7 @@
                         </div>
                     </div>
                     <div class="nmui-folders-content">
-                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-4 row-cols-lg-4 g-3 py-2">
+                        <div class="widget-book-doctor-times row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3 py-2">
                             <div class="col">
                                 <div class="widget-book-doctor-time rounded-3">
                                     11:30
